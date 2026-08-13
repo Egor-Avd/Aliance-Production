@@ -1,5 +1,44 @@
+@font-face {
+  font-family: "BebasNeue";
+  src: url(./assets/fonts/BebasNeueRegular.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NotoSans";
+  src: url(./assets/fonts/NotoSans-Bold.woff2) format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NotoSans";
+  src: url(./assets/fonts/NotoSans-Regular.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NotoSans";
+  src: url(./assets/fonts/NotoSans-SemiBold.woff2) format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   box-sizing: border-box;
+}
+
+body {
+  font-style: normal;
+  font-size: 16px;
+  font-family: "NotoSans";
+  font-weight: 400;
 }
 
 a {
@@ -12,4 +51,68 @@ ul {
 
 li {
   list-style: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #898989;
+  border-bottom: 1px solid rgba(235, 235, 240, 0.20);
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  padding: 25px 50px;
+  border-right: 1px solid rgba(235, 235, 240, 0.20);
+}
+
+.navbar {
+  margin-left: 50px;
+  flex-basis: 100%;
+  }
+
+.navbar-list {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  
+}
+
+.navbar-link {
+  color: #FFF;
+  line-height: 160%;
+  font-weight: 400;
+}
+
+.header-phone {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  padding-right: 50px;
+}
+
+.header-phone-link {
+  font-family: "NotoSans";
+  color: #FFF;
+  font-weight: 600;
+  line-height: 160%;
+}
+
+.header-button {
+  flex-shrink: 0;
+  
+}
+
+.button {
+  padding: 25px 60px;
+  height: 94px;
+  border: none;
+  background: #5C8EE5;
+  color: #FFF;
+  font-family: "NotoSans";
+  font-weight: 600;
+  line-height: 160%;
 }
