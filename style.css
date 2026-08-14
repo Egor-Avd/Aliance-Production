@@ -46,6 +46,11 @@ a {
   text-decoration: none;
 }
 
+ol {
+  padding: 0;
+  margin: 0;
+}
+
 ul {
   padding: 0;
 }
@@ -60,12 +65,13 @@ li {
   justify-content: space-between;
   border-bottom: 1px solid rgba(235, 235, 240, 0.2);
   position: fixed;
-  z-index: 1;
+  z-index: 2;
+  left: 0;
+  top: 0;
   width: 100%;
 }
 
 .container {
-  padding-top: 94px;
   max-width: 1440px;
   margin: auto;
 }
@@ -127,6 +133,7 @@ li {
 }
 
 .header-container {
+  padding-top: 94px;
   min-height: 100vh;
 }
 
@@ -151,9 +158,12 @@ li {
 }
 
 .header-content {
-  padding-top: 150px;
   position: relative;
   z-index: 1;
+}
+
+.content {
+  padding-top: 150px;
 }
 
 .seporator {
@@ -218,4 +228,76 @@ li {
   font-size: 16px;
   font-weight: 400;
   line-height: 160%;
+}
+
+.section-steps-title {
+  color: #292d33;
+  font-family: "BebasNeue";
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 120%;
+  padding-block: 30px 50px;
+  margin: 0;
+}
+
+.steps-list {
+  display: flex;
+  column-gap: 30px;
+}
+
+.steps-item {
+  width: 330px;
+  height: 267px;
+}
+
+.steps-num {
+  color: #5c8ee5;
+  font-family: "BebasNeue";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+}
+
+.steps-num::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #ebebf0;
+  margin-left: 30px;
+}
+
+.steps-title {
+  margin-block: 30px 10px;
+  color: #292d33;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.steps-text {
+  margin: 0;
+  margin-block: 10px 20px;
+  color: #828a99;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.steps-link {
+  display: flex;
+  align-items: center;
+  color: #5c8ee5;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 160%;
+}
+
+.steps-link::before {
+  content: "";
+  height: 1px;
+  width: 40px;
+  background: #5c8ee5;
+  margin-right: 20px;
 }
