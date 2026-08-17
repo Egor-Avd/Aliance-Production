@@ -54,6 +54,7 @@ ol {
 
 ul {
   padding: 0;
+  margin: 0;
 }
 
 li {
@@ -72,17 +73,21 @@ li {
   top: 0;
   width: 100%;
   color: #fff;
-  transition: background 0.2s, color 0.2s, fill 0.2s, height 0.2s;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    fill 0.2s,
+    height 0.2s;
 }
 
 .header-light {
-  background: #FAFBFC;
-  color: #292D33;
+  background: #fafbfc;
+  color: #292d33;
   height: 74px;
 }
 
 .header-light .path {
-  fill: #292D33;
+  fill: #292d33;
 }
 
 .container {
@@ -132,14 +137,15 @@ li {
 }
 
 .navbar-button {
+  display: inline-block;
   height: 100%;
   flex-shrink: 0;
-  width: 300px;
 }
 
 .button {
   padding: 25px 60px;
   /* height: 94px; */
+  font-size: 16px;
   border: none;
   background: #5c8ee5;
   color: #fff;
@@ -210,23 +216,24 @@ li {
 }
 
 .header-button {
-  width: 313px;
   height: 76px;
   display: inline-block;
   margin-bottom: 100px;
 }
 
 .header-features {
-  /* min-height: 168px;
-  margin: 0; */
+  min-height: 168px;
+  min-width: 288px;
+  margin: 0;
   display: flex;
   align-items: center;
   position: relative;
   z-index: 1;
+  
 }
 
 .header-features-item {
-  min-height: 168px;
+  padding: 30px 50px;
   border: 1px solid rgba(235, 235, 240, 0.2);
 }
 
@@ -235,13 +242,14 @@ li {
 }
 
 .header-features-icon {
-  padding: 30px 50px 20px;
+  width: 36px;
+  height: 36px;
 }
 
 .header-features-text {
   color: #fff;
   margin: 0;
-  padding: 0 50px 30px;
+  padding-top: 20px;
   font-size: 16px;
   font-weight: 400;
   line-height: 160%;
