@@ -127,7 +127,7 @@ li {
   color: #292d33;
   font-size: 20px;
   font-weight: 600;
-  line-height: 160%; /* 32px */
+  line-height: 1.6; /* 32px */
   text-decoration-line: underline;
   margin-bottom: 1.25rem;
 }
@@ -142,7 +142,7 @@ li {
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
-  line-height: 160%;
+  line-height: 1.6;
 }
 
 .mobile-submenu-item:not(:last-child) {
@@ -162,7 +162,7 @@ li {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 160%;
+  line-height: 1.6;
 }
 
 .mobile-info-address {
@@ -181,7 +181,7 @@ li {
   color: #292d33;
   font-style: normal;
   font-weight: 400;
-  line-height: 160%;
+  line-height: 1.6;
 }
 
 .icons-social {
@@ -225,7 +225,7 @@ li {
 .navbar-link {
   display: inline-flex;
   color: #fff;
-  line-height: 160%;
+  line-height: 1.6;
   font-weight: 400;
   color: inherit;
   font-size: 1rem;
@@ -247,7 +247,7 @@ li {
 .header-phone-link {
   font-family: "NotoSans";
   font-weight: 600;
-  line-height: 160%;
+  line-height: 1.6;
   color: inherit;
   font-size: 1rem;
 }
@@ -272,7 +272,7 @@ li {
   color: #fff;
   font-family: "NotoSans";
   font-weight: 600;
-  line-height: 160%;
+  line-height: 1.6;
 }
 
 .header-container {
@@ -323,7 +323,7 @@ li {
   font-family: "BebasNeue";
   font-size: clamp(3rem, 2.515rem + 2.07vw, 5rem);
   font-weight: 400;
-  line-height: 120%;
+  line-height: 1.2;
 }
 
 .header-text {
@@ -333,7 +333,7 @@ li {
   width: clamp(21.563rem, 15.874rem + 24.27vw, 45rem);
   font-size: 1rem;
   font-weight: 400;
-  line-height: 160%;
+  line-height: 1.6;
 }
 
 .header-button {
@@ -372,7 +372,7 @@ li {
   padding-top: 1.25rem;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 160%;
+  line-height: 1.6;
 }
 
 .section-steps-title {
@@ -380,7 +380,7 @@ li {
   font-family: "BebasNeue";
   font-size: clamp(2.25rem, 1.886rem + 1.55vw, 3.75rem);
   font-weight: 400;
-  line-height: 120%;
+  line-height: 1.2;
   padding-block: 1.875rem 3.125rem;
   margin: 0;
 }
@@ -388,6 +388,7 @@ li {
 .steps-list {
   display: flex;
   column-gap: 1.875rem;
+  justify-content: space-between;
 }
 
 .steps-item {
@@ -400,7 +401,7 @@ li {
   font-family: "BebasNeue";
   font-size: 3rem;
   font-weight: 400;
-  line-height: 120%;
+  line-height: 1.2;
   display: flex;
   align-items: center;
 }
@@ -418,7 +419,7 @@ li {
   color: #292d33;
   font-size: clamp(1.25rem, 1.129rem + 0.52vw, 1.75rem);
   font-weight: 400;
-  line-height: 160%;
+  line-height: 1.6;
 }
 
 .steps-text {
@@ -427,7 +428,7 @@ li {
   color: #828a99;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 160%;
+  line-height: 1.6;
 }
 
 .steps-link {
@@ -436,7 +437,7 @@ li {
   color: #5c8ee5;
   font-size: 1rem;
   font-weight: 600;
-  line-height: 160%;
+  line-height: 1.6;
 }
 
 .steps-link::before {
@@ -446,6 +447,24 @@ li {
   background: #5c8ee5;
   margin-right: 1.25rem;
 }
+
+.slider-steps-buttons {
+  display: none;
+  height: 40px;
+  justify-content: flex-end;
+  }
+
+.steps-swiper-button-prev,
+.steps-swiper-button-next {
+  background: #5c8ee5;
+  height: 100%;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
 .slider-features-buttons {
   display: none;
   height: 44px;
@@ -487,6 +506,11 @@ li {
 
   .slider-features-buttons {
     display: flex;
+  }
+
+  .slider-steps-buttons {
+    display: flex;
+    align-items: center;
   }
 
   .navbar-button {

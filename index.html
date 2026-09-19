@@ -116,7 +116,7 @@
         </div>
 
         <!-- Slider main container -->
-        <div class="swiper">
+        <div class="swiper features-slider">
           <!-- Additional required wrapper -->
           <ul class="swiper-wrapper header-features">
             <!-- Slides -->
@@ -152,13 +152,11 @@
             </li>
 
           </ul>
-
-
           <!-- If we need navigation buttons -->
           <div class="slider-features-buttons">
             <div class="slider-swiper-button-prev">
               <svg class="arrow-prew" width="36" height="24">
-                <use href="./assets/icons/sprite.svg#arrow-prew"></use>
+                <use href="./assets/icons/sprite.svg#arrow-prev"></use>
               </svg>
             </div>
             <div class="slider-swiper-button-next">
@@ -176,32 +174,46 @@
         <div class="content">
           <div class="seporator"></div>
           <h2 class="section-steps-title">схема работы</h2>
-          <ol class="steps-list">
-            <li class="steps-item">
-              <span class="steps-num">01</span>
-              <h3 class="steps-title">Знакомство</h3>
-              <p class="steps-text">Безусловно, сплочённость команды профессионалов позволяет оценить значение форм
-                воздействия.</p>
-              <a href="#" class="steps-link">Оставить заявку</a>
-            </li>
-            <li class="steps-item">
-              <span class="steps-num">02</span>
-              <h3 class="steps-title">Заключение договора</h3>
-              <p class="steps-text">Лишь интерактивные прототипы призваны к ответу.</p>
-            </li>
-            <li class="steps-item">
-              <span class="steps-num">03</span>
-              <h3 class="steps-title">Производство</h3>
-              <p class="steps-text">А также стремящиеся вытеснить традиционное производство, нанотехнологии
-                функционально разнесены на независимые элементы.</p>
-            </li>
-            <li class="steps-item">
-              <span class="steps-num">04</span>
-              <h3 class="steps-title">Доставка</h3>
-              <p class="steps-text">В частности, экономическая повестка сегодняшнего дня говорит о возможностях
-                приоритизации разума над эмоциями.</p>
-            </li>
-          </ol>
+          <div class="swiper steps-slider">
+            <ol class="steps-list swiper-wrapper">
+              <li class="swiper-slide steps-item">
+                <span class="steps-num">01</span>
+                <h3 class="steps-title">Знакомство</h3>
+                <p class="steps-text">Безусловно, сплочённость команды профессионалов позволяет оценить значение форм
+                  воздействия.</p>
+                <a href="#" class="steps-link">Оставить заявку</a>
+              </li>
+              <li class="swiper-slide steps-item">
+                <span class="steps-num">02</span>
+                <h3 class="steps-title">Заключение договора</h3>
+                <p class="steps-text">Лишь интерактивные прототипы призваны к ответу.</p>
+              </li>
+              <li class="swiper-slide steps-item">
+                <span class="steps-num">03</span>
+                <h3 class="steps-title">Производство</h3>
+                <p class="steps-text">А также стремящиеся вытеснить традиционное производство, нанотехнологии
+                  функционально разнесены на независимые элементы.</p>
+              </li>
+              <li class="swiper-slide steps-item">
+                <span class="steps-num">04</span>
+                <h3 class="steps-title">Доставка</h3>
+                <p class="steps-text">В частности, экономическая повестка сегодняшнего дня говорит о возможностях
+                  приоритизации разума над эмоциями.</p>
+              </li>
+            </ol>
+            <div class="slider-steps-buttons">
+              <div class="steps-swiper-button-prev">
+                <svg class="arrow-prew" width="30" height="20">
+                  <use href="./assets/icons/sprite.svg#arrow-prev"></use>
+                </svg>
+              </div>
+              <div class="steps-swiper-button-next">
+                <svg class="arrow-next" width="30" height="20">
+                  <use href="./assets/icons/sprite.svg#arrow-next"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
