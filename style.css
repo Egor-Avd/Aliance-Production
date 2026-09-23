@@ -298,7 +298,10 @@ li {
 }
 
 .header-container-image {
-  background-image: url("./assets/images/header-bg.jpg");
+  background-image: image-set(
+    url("./assets/images/header-bg.webp") type("image/webp"),
+    url("./assets/images/header-bg.jpg") type("image/jpg")
+  );
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -524,8 +527,8 @@ li {
   transition: border-color 0.2s ease;
 }
 
-.card:hover {
-  border-color: #5C8EE5;
+.card:hover .card-title {
+  color: #5c8ee5;
 }
 
 .card-title {
@@ -538,8 +541,8 @@ li {
   transition: color 0.2s ease;
 }
 
-.card-title:hover {
-  color: #5C8EE5;
+.card:hover {
+  border-color: #5c8ee5;
 }
 
 .card-text {
@@ -557,6 +560,63 @@ li {
   right: 0;
   position: absolute;
   z-index: 0;
+}
+
+.trademark-cards {
+  display: flex;
+}
+
+.trademark-card {
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  grid-template-rows: auto 2fr;
+  grid-template-areas:
+    "logo title title"
+    "logo text text";
+  gap: 0.625rem 3.125rem;
+  padding: 3.125rem;
+  flex-basis: 50%;
+  border: 1px solid #ebebf0;
+  transition:
+    border-color,
+    color,
+    fill 0.2s ease;
+}
+
+.trademark-card:hover .trademark-card-title {
+  color: #5c8ee5;
+}
+
+.trademark-card:hover {
+  border-color: #5c8ee5;
+}
+
+.trademark-card-logo {
+  width: clamp(6.25rem, 5.036rem + 5.18vw, 11.25rem);
+  aspect-ratio: 1;
+  grid-area: logo;
+  fill: #828a99;
+}
+
+.trademark-card:hover .trademark-card-logo {
+  fill: #5c8ee5;
+}
+
+.trademark-card-title {
+  grid-area: title;
+  color: #292d33;
+  font-size: clamp(1.25rem, 1.129rem + 0.52vw, 1.75rem);
+  line-height: 1.6;
+  font-weight: 400;
+  margin: 0;
+  place-self: center;
+}
+
+.trademark-card-text {
+  grid-area: text;
+  margin: 0;
+  color: #828a99;
 }
 
 @media (max-width: 1700px) {
@@ -596,6 +656,10 @@ li {
   }
   .card {
     flex-basis: 50%;
+  }
+
+  .trademark-card {
+    grid-template-columns: auto auto;
   }
 }
 
@@ -638,6 +702,9 @@ li {
   .mobile-menu.is-open {
     display: block;
   }
+  .trademark-cards {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 768px) {
@@ -645,6 +712,15 @@ li {
     flex-basis: 100%;
   }
 }
+
+@media (max-width: 576px) {
+  .trademark-card {
+   grid-template-areas: 
+   "logo title"
+   "text text"; 
+  }
+}
+
 @media (max-width: 375px) {
   .card {
     max-height: 429px;
