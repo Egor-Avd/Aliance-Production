@@ -674,6 +674,7 @@ li {
 }
 
 .clients-list-item {
+  column-gap: 1.25rem;
   display: flex;
   align-items: center;
 }
@@ -861,4 +862,7 @@ li {
     max-height: 429px;
     max-width: 345px;
   }
+  .clients-list {
+ columns: 1 auto;
+}
 }
