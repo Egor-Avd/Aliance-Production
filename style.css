@@ -819,6 +819,17 @@ li {
     max-width: 100%;
     padding-inline: 1rem;
   }
+  .clients-wrapper {
+    flex-direction: column;
+    gap: 1.875rem;
+  
+  }
+  .clients-content {
+    max-width: 100%;
+  }
+  .client-logo-item {
+    padding: 1.875rem 3.75rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -839,6 +850,9 @@ li {
     grid-template-areas:
       "logo title"
       "text text";
+  }
+  .client-logo-item {
+    flex-basis: calc(100% / 2);
   }
 }
 
