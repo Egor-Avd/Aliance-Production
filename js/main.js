@@ -99,4 +99,14 @@ const swiperBlog = new Swiper(".blog-slider", {
     nextEl: ".blog-button-prev",
     prevEl: ".blog-button-next",
   },
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 480px
+    768: {
+      slidesPerView: 1,
+    },
+    1024: {
+      slidesPerView: 2,
+    }
+  }
 });
