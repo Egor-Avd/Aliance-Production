@@ -101,10 +101,12 @@
       </svg>
       <a href="tel:+74996861014" class="header-phone-link">+7 (499) 686-10-14</a>
     </div>
-    <button class="navbar-button button">
+    <button type="button" class="navbar-button button">
       <svg class="button-icon" width="24" height="24">
         <use href="./assets/icons/sprite.svg#phone"></use>
-      </svg><span class="button-text">Получить консультацию</span></button>
+      </svg>
+      <span class="button-text">Получить консультацию</span>
+    </button>
   </header>
   <main class="main">
     <!-- Section HEADER-CONTENT -->
@@ -116,7 +118,7 @@
           <p class="header-text">Высокий уровень вовлечения представителей целевой аудитории является четким
             доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от анализа
             существующих паттернов поведения.</p>
-          <button class="header-button button">Подробнее о компании</button>
+          <button type="button" class="header-button button">Подробнее о компании</button>
         </div>
         <!-- Features -->
         <!-- Slider main container -->
@@ -463,21 +465,55 @@
         <div class="blog-wrapper">
           <div class="button-link">Весь блог</div>
           <div class="blog-buttons primary-buttons-wrapper">
-          <div class="blog-button-prev primary-button-prev">
-            <svg class="arrow-prew" width="36" height="24">
-              <use href="./assets/icons/sprite.svg#arrow-prev"></use>
-            </svg>
+            <div class="blog-button-prev primary-button-prev">
+              <svg class="arrow-prew" width="36" height="24">
+                <use href="./assets/icons/sprite.svg#arrow-prev"></use>
+              </svg>
+            </div>
+            <div class="blog-button-next primary-button-next">
+              <svg class="arrow-next" width="36" height="24">
+                <use href="./assets/icons/sprite.svg#arrow-next"></use>
+              </svg>
+            </div>
           </div>
-          <div class="blog-button-next primary-button-next">
-            <svg class="arrow-next" width="36" height="24">
-              <use href="./assets/icons/sprite.svg#arrow-next"></use>
-            </svg>
-          </div>
-        </div>
         </div>
       </div>
 
 
+    </section>
+    <section class="section-cta">
+      <div class="bg-grey cta">
+        <img src="./assets/images/cta.png" alt="call to action" class="cta-image">
+        <div class="cta-form-wrapper container">
+          <form action="" class="cta-form">
+            <h2 class="section-title cta-form-title">Хотите сотрудничать?</h2>
+            <p class="cta-form-text">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все
+              интересующие вопросы и поможем даже в самых сложных случаях!</p>
+            <div class="input-group-wrapper">
+              <div class="input-group">
+                <input id="user-name" type="text" class="input" placeholder=" ">
+                <label class="input-label" for="user-name">Имя</label>
+              </div>
+              <div class="input-group">
+                <input id="user-phone" type="tel" class="input" placeholder=" ">
+                <label class="input-label" for="user-phone">Номер телефона</label>
+              </div>
+            </div>
+            <div class="cta-form-footer">
+              <button type="submit" class="button input-button">Отправить заявку</button>
+              <div class="notify">
+                <svg class="notify-icon" width="14" height="14">
+                  <use href="./assets/icons/sprite.svg#shield"></use>
+                </svg>
+                <p class="notify-text">
+                  Обращаясь к нам вы получаете не только профессиональную работу, но и абсолютную конфиденциальность
+                  информации!
+                </p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </section>
   </main>
   <script src="./js/swiper-bundle.min.js"></script>
