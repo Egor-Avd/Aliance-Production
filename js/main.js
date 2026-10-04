@@ -94,7 +94,7 @@ const swiperBlog = new Swiper(".blog-slider", {
   speed: 400,
   loop: false,
   spaceBetween: 30,
-  slidesPerView: 2,
+  slidesPerView: 1,
   navigation: {
     nextEl: ".blog-button-prev",
     prevEl: ".blog-button-next",
